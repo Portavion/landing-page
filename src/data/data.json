@@ -1,0 +1,58 @@
+{
+  "Header": {
+    "title": "Impactful, club-ready masters",
+    "paragraph": "I bring the best out of your music with mastering that emphasize clarity, warmth and energy."
+  },
+  "About": {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
+    ],
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Velw",
+      "largeImage": "img/portfolio/velw.png",
+      "smallImage": "img/portfolio/velw.png",
+      "link": "https://open.spotify.com/track/4HPrw3WDkpy8l0ycnwsITw?si=3e8ec08d287a437a"
+    },
+    {
+      "title": "Portavion",
+      "largeImage": "img/portfolio/portavion.png",
+      "smallImage": "img/portfolio/portavion.png",
+      "link": "https://open.spotify.com/track/4LEC2H8OxlRh3MSynqH7jm?si=4a7a0acbb6b54cf2"
+    },
+    {
+      "title": "Bastian Horro",
+      "largeImage": "img/portfolio/bastian-horro.png",
+      "smallImage": "img/portfolio/bastian-horro.png",
+      "link": "https://open.spotify.com/track/4CApE2ocmKK5MdHCS3CYB8?si=7d7333c85bb44419"
+    }
+  ],
+  "Contact": {
+    "instragram": "https://www.instagram.com/micronmastering/"
+  },
+  "Features": [
+    {
+      "title": "Awal",
+      "largeImage": "logos/AWAL.png"
+    },
+    {
+      "title": "Arts",
+      "largeImage": "logos/arts.png"
+    },
+    {
+      "title": "Sony",
+      "largeImage": "logos/sony.png"
+    }
+  ]
+}
