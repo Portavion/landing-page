@@ -16,16 +16,15 @@ export const Contact = (props) => {
   function handleSubmit(event) {
     event.preventDefault(); // Prevent default submission
 
+    const myForm = event.target;
+    const formData = new FormData(myForm);
     fetch("/", {
       method: "POST",
-      body: new FormData(event.target), // Send form data
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
     })
-      .then((response) => {
-        // Handle response (e.g., show success message)
-      })
-      .catch((error) => {
-        // Handle error
-      });
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
   }
 
   return (
@@ -41,7 +40,12 @@ export const Contact = (props) => {
                   soon as possible.
                 </p>
               </div>
-              <form name="contact" data-netlify="true" method="POST">
+              <form
+                name="contact"
+                data-netlify="true"
+                method="POST"
+                onSubmit="Submit"
+              >
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="row">
                   <div className="col-md-6">
