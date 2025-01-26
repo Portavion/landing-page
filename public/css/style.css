@@ -51,6 +51,10 @@ a:focus {
   text-decoration: none;
   color: #608dfd;
 }
+.logoImage {
+  width: 200xpx;
+  height: 200px;
+}
 ul,
 ol {
   list-style: none;
@@ -212,7 +216,7 @@ a:focus,
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: 100%;
+  background-size: cover;
   -o-background-size: cover;
 }
 .intro .overlay {

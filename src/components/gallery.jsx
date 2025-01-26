@@ -28,7 +28,12 @@ export const Gallery = (props) => {
                       largeImage={d.largeImage}
                       smallImage={d.smallImage}
                     />
-                    <Spotify style={imageContainerStyle} wide link={d.link} />
+                    <Spotify
+                      style={imageContainerStyle}
+                      wide
+                      link={d.link}
+                      className="spotify"
+                    />
                   </div>
                 ))
               : "Loading..."}

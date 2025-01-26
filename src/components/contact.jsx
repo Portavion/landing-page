@@ -53,6 +53,7 @@ export const Contact = (props) => {
               <form
                 name="contact"
                 data-netlify="true"
+                netflify
                 netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -138,9 +139,11 @@ export const Contact = (props) => {
                   </div>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send
-                </button>
+                <div className="button" class="text-center">
+                  <button type="submit" className="btn btn-custom btn-lg ">
+                    Send
+                  </button>
+                </div>
               </form>
             </div>
           </div>

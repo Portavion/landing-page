@@ -1,11 +1,13 @@
 import React from "react";
-
+const headerStyle = {
+  width: "100%",
+};
 export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
         <div className="overlay">
-          <div className="container">
+          <div className="container" style={headerStyle}>
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
                 <h1>
