@@ -32,7 +32,7 @@ export const Contact = (props) => {
                 </p>
               </div>
               <form name="contact" data-netlify="true" method="POST">
-                <input type="hidden" name="contact" value="contact" />
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
