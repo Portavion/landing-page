@@ -13,6 +13,11 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    prompt("Thanks, I will be in touch");
+  }
+
   return (
     <div>
       <div id="contact">
@@ -26,7 +31,8 @@ export const Contact = (props) => {
                   soon as possible.
                 </p>
               </div>
-              <form name="contact" netflify method="POST">
+              <form name="contact" data-netlify="true" method="POST">
+                <input type="hidden" name="contact" value="contact" />
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -111,7 +117,11 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <div className="button" class="text-center">
-                  <button type="submit" className="btn btn-custom btn-lg ">
+                  <button
+                    type="submit"
+                    onSubmit={handleSubmit}
+                    className="btn btn-custom btn-lg "
+                  >
                     Send
                   </button>
                 </div>
