@@ -26,13 +26,7 @@ export const Contact = (props) => {
                   soon as possible.
                 </p>
               </div>
-              <form
-                name="contact"
-                data-netlify="true"
-                netflify
-                netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="form-name" value="contact" />
+              <form name="contact" netflify method="POST">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -109,7 +103,6 @@ export const Contact = (props) => {
                         name="streaming"
                         className="form-control"
                         placeholder="https://soundcloud.com/sven"
-                        required
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
