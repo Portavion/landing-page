@@ -18,6 +18,7 @@ export const Contact = (props) => {
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    console.log(formData);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

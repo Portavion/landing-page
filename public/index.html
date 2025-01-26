@@ -39,13 +39,18 @@
     href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
     rel="stylesheet"
   />
-  <title>A React Landing Page Template</title>
+  <title>Micron Mastering</title>
   <meta name="description" content="" />
-  <meta name="author" content="@Issaafalkattan" />
+  <meta name="author" content="@micronmastering" />
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div id="root"></div>
+  <form name="contact" data-netlify="true" method="POST">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="name" placeholder="Name" required />
+    <input type="hidden" name="email" placeholder="Email" required />
+  </form>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
