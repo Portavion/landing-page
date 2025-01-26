@@ -4,10 +4,9 @@ import React from "react";
 const initialState = {
   name: "",
   email: "",
-  message: "",
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,6 +42,7 @@ export const Contact = (props) => {
                         name="name"
                         className="form-control"
                         placeholder="Name"
+                        value={name}
                         required
                         onChange={handleChange}
                       />
@@ -57,6 +57,7 @@ export const Contact = (props) => {
                         name="email"
                         className="form-control"
                         placeholder="Email"
+                        value={email}
                         required
                         onChange={handleChange}
                       />

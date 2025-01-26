@@ -1,8 +1,6 @@
 import React from "react";
 
 const logoStyle = {
-  // width: "200px",
-  // height: "200px",
   margin: "0 32px",
   opacity: 0.8,
 };
@@ -31,7 +29,7 @@ export const Features = (props) => {
                     // className="img-responsive"
                     style={logoStyle}
                     alt={d.title}
-                  />{" "}
+                  />
                 </div>
               ))
             : "Loading..."}
