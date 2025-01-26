@@ -44,7 +44,7 @@ export const Contact = (props) => {
                 name="contact"
                 data-netlify="true"
                 method="POST"
-                onSubmit="Submit"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="row">
