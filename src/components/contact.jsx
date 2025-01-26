@@ -14,8 +14,18 @@ export const Contact = (props) => {
   };
 
   function handleSubmit(event) {
-    event.preventDefault();
-    prompt("Thanks, I will be in touch");
+    event.preventDefault(); // Prevent default submission
+
+    fetch("/", {
+      method: "POST",
+      body: new FormData(event.target), // Send form data
+    })
+      .then((response) => {
+        // Handle response (e.g., show success message)
+      })
+      .catch((error) => {
+        // Handle error
+      });
   }
 
   return (
