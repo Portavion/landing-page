@@ -14,7 +14,7 @@ export const Contact = (props) => {
   };
 
   function handleSubmit(event) {
-    event.preventDefault(); // Prevent default submission
+    // event.preventDefault(); // Prevent default submission
 
     const myForm = event.target;
     const formData = new FormData(myForm);
