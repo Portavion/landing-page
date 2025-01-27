@@ -10,6 +10,7 @@
   .logoImage {
     width: 100px;
     height: 100px;
+    margin: 0px;
   }
   #header {
     width: 100%;
@@ -44,5 +45,14 @@
   #contact {
     padding-left: 80px;
     padding-right: 80px;
+  }
+
+  .intro h1 {
+    font-size: 4em;
+  }
+  header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 
 const logoStyle = {
-  margin: "0 32px",
   opacity: 0.8,
 };
 
