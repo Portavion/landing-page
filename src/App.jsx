@@ -17,7 +17,7 @@ const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
-    window.fbq("track", "MyEvent");
+    window.fbq("track", "PageView");
   }, []);
 
   return (
