@@ -1,8 +1,16 @@
 import React from "react";
+import { useEffect } from "react";
 const headerStyle = {
   width: "100%",
 };
 export const Header = (props) => {
+  useEffect(() => {
+    if (window.fbq) {
+      window.fbq("track", "PageView");
+    } else {
+      console.error("Facebook Pixel not loaded");
+    }
+  });
   return (
     <header id="header">
       <div className="intro">

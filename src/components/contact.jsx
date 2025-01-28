@@ -16,6 +16,7 @@ export const Contact = (props) => {
   function handleSubmit(event) {
     // event.preventDefault(); // Prevent default submission
 
+    window.fbq("track", "FormSubmission");
     const myForm = event.target;
     const formData = new FormData(myForm);
     fetch("/", {
@@ -107,7 +108,7 @@ export const Contact = (props) => {
                         id="number"
                         name="number"
                         className="form-control"
-                        placeholder="1"
+                        defaultValue={"1"}
                         required
                         onChange={handleChange}
                       />
