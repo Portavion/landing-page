@@ -38,7 +38,7 @@ export const Gallery = (props) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
-          style={{ paddingTop: "40px", paddingBottom: "40px" }}
+          style={{ paddingBottom: "40px" }}
         ></iframe>
         <iframe
           width="560"
