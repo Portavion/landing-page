@@ -1,10 +1,4 @@
-import { Image } from "./image";
 import React from "react";
-import { Spotify } from "react-spotify-embed";
-
-const imageContainerStyle = {
-  marginTop: "10px",
-};
 
 export const Gallery = (props) => {
   return (
@@ -14,31 +8,49 @@ export const Gallery = (props) => {
           <h2>Selected Works</h2>
           <p></p>
         </div>
-        <div className="row">
-          <div className="portfolio-items">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="col-sm-6 col-md-4 col-lg-4"
-                    style={imageContainerStyle}
-                  >
-                    <Image
-                      title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
-                    />
-                    <Spotify
-                      style={imageContainerStyle}
-                      wide
-                      link={d.link}
-                      className="spotify"
-                    />
-                  </div>
-                ))
-              : "Loading..."}
-          </div>
-        </div>
+        <iframe
+          width="840"
+          height="473"
+          src="https://www.youtube.com/embed/iho8--uno6A?si=dx-J1FUopbARGn6S"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dKogthXJuOA?si=13HO4nD2cZUGzQ0h"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          style={{ paddingTop: "40px", paddingBottom: "40px" }}
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/If8qt38Zx28?si=52oLEvfn1N0sp2yl"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          style={{ paddingTop: "40px", paddingBottom: "40px" }}
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VtTkwEMMYMM?si=dBvLyFXHSmYy8xQU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div className="row"></div>
       </div>
     </div>
   );
