@@ -1,4 +1,5 @@
 import React from "react";
+import "@justinribeiro/lite-youtube";
 
 export const Gallery = (props) => {
   return (
@@ -8,49 +9,34 @@ export const Gallery = (props) => {
           <h2>Selected Works</h2>
           <p></p>
         </div>
-        <iframe
-          width="840"
-          height="473"
-          src="https://www.youtube.com/embed/iho8--uno6A?si=dx-J1FUopbARGn6S"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/dKogthXJuOA?si=13HO4nD2cZUGzQ0h"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style={{ paddingTop: "40px", paddingBottom: "40px" }}
-        ></iframe>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/If8qt38Zx28?si=52oLEvfn1N0sp2yl"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style={{ paddingBottom: "40px" }}
-        ></iframe>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/VtTkwEMMYMM?si=dBvLyFXHSmYy8xQU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <div className="row"></div>
+        <div style={{ width: "840px", margin: "auto", marginBottom: "40px" }}>
+          <lite-youtube
+            videotitle="Tyler Loyal - Ferrari"
+            videoid="iho8--uno6A"
+            posterquality="maxresdefault"
+          ></lite-youtube>
+        </div>
+        <div style={{ width: "840px", margin: "auto", marginBottom: "40px" }}>
+          <lite-youtube
+            videotitle="Soul Baby Dali - Pull Out"
+            videoid="dKogthXJuOA"
+            posterquality="maxresdefault"
+          ></lite-youtube>
+        </div>
+        <div style={{ width: "840px", margin: "auto", marginBottom: "40px" }}>
+          <lite-youtube
+            videotitle="Tyler Loyal - Coi"
+            videoid="If8qt38Zx28"
+            posterquality="maxresdefault"
+          ></lite-youtube>
+        </div>
+        <div style={{ width: "840px", margin: "auto", marginBottom: "40px" }}>
+          <lite-youtube
+            videotitle="Tyler Loyal - I'm Still"
+            videoid="VtTkwEMMYMM"
+            posterquality="maxresdefault"
+          ></lite-youtube>
+        </div>
       </div>
     </div>
   );
