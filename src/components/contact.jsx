@@ -45,9 +45,19 @@ export const Contact = (props) => {
                 name="contact"
                 data-netlify="true"
                 method="POST"
+                // netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true"
                 onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
+                {/* for honeypot */}
+                {/* <p class="hidden"> */}
+                {/*   <label> */}
+                {/*     Don’t fill this out if you’re human:{" "} */}
+                {/*     <input name="bot-field" /> */}
+                {/*   </label> */}
+                {/* </p> */}
+                {/* for recaptcha */}
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -131,6 +141,7 @@ export const Contact = (props) => {
                   </div>
                 </div>
                 <div id="success"></div>
+                <div data-netlify-recaptcha="true"></div>
                 <div className="button" class="text-center">
                   <button
                     type="submit"
